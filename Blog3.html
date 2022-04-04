@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src='jquery.js'></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	
+	<link rel = "stylesheet" href = "css/fontawesome.css">
+	<link rel = "stylesheet" href = "css/flaticon.css">
+	
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--Style-->
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="image/logo.jpg" type="image/png" sizes="30x">
+	
+	
+	<!--Style-->
+	<style>
+			
+		.header{
+		  position:relative;
+		  overflow:hidden;
+		  display:flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-items: flex-start;
+		  align-content: flex-start;
+		  height:50vw;
+		  min-height:400px;
+		  max-height:550px;
+		  min-width:300px;
+		  color:#eee;
+		}
+		.header:after{
+		  content:"";
+		  width:100%;
+		  height:100%;
+		  position:absolute;
+		  bottom:0;
+		  left:0;
+		  z-index:-1;
+		 background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+		}
+		.header:before{
+		  content:"";
+		  width:100%;
+		  height:200%;
+		  position:absolute;
+		  top:0;
+		  left:0;
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translateZ(0); backface-visibility: hidden;
+		  scale(1.0, 1.0);
+			transform: translateZ(0);
+		  background:#1B2030 url("image/BlogBig3.jpg") 50% 0 no-repeat;	
+		  background-size:100%;
+		  background-attachment:fixed;
+		  animation: grow 360s  linear 10ms infinite;
+		  transition:all 0.4s ease-in-out;
+		  z-index:-2
+		}
+		.header a{
+		  color:#eee
+		}
+		.menu{
+		  display:block;
+		  width:40px;
+		  height:30px;
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  position:absolute;
+		  right:20px;
+		  top:20px;
+		  text-decoration:none
+		}
+		.menu:after{
+		  content:"";
+		  display:block;
+		  width:20px;
+		  height:3px;
+		  background:#fff;
+		  position:absolute;
+		  margin:0 auto;
+		  top:5px;
+		  left:0;
+		  right:0;
+		  box-shadow:0 8px, 0 16px
+		}
+		.logo{
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-flex;
+		  align-items:center;
+		  align-content:center;
+		  margin:20px;
+		  padding:0px 10px;
+		  font-weight:900;
+		  font-size:1.1em;
+		  line-height:1;
+		  box-sizing:border-box;
+		  height:40px
+		}
+		.sides, .info{
+		  flex: 0 0 auto;
+		  width:50%
+		}
+		.info{
+		  width:100%;
+		  padding:15% 10% 0 10%;
+		  text-align:center;
+		  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+		}
+		.author{
+		  display:inline-block;
+		  width:50px;
+		  height:50px;
+		  border-radius:50%;
+		  background:url("image/Harper.jpg") center no-repeat;
+		  background-size:cover;
+		  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+		  margin-bottom:3px
+		}
+		.info h4, .meta{
+		  font-size:0.7em
+		}
+		.meta{
+		  font-style:italic;
+		}
+		@keyframes grow{
+		  0% { transform: scale(1) translateY(0px)}
+		  50% { transform: scale(1.2) translateY(-400px)}
+		}
+		.content{  
+		  padding:5% 10%;
+		  text-align:justify
+		}
+		.btn{
+		  color:#333;
+		  border:2px solid;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-block;
+		  padding:5px 10px;
+		  font-weight:600
+		}
+	
+				
+		p{
+		font-size: 18px;
+	}
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <title>BJD Blog</title>
+  </head>
+  <body>
+  <!--topbutton-->
+	<a id='topButton'></a>
+	<!--Header-->
+	<div class="header">
+ <div class="sides">
+	<span style="cursor:pointer"><a onclick="goBack()" class="logo">Go BACK</a></span>
+  </div>
+  <div class="sides"></div>
+  <div class="info">
+    <h1>My Pregnancy Style</h1>
+    <div class="meta">
+      <a  href="https://www.instagram.com/harperandharley/?hl=en" target="_b" class="author"></a><br>
+      By <a href="https://www.instagram.com/harperandharley/?hl=en" target="_b">Harper and Harley</a>
+    </div>
+  </div>
+</div>
+<section class="content">
+<h4 align="center"><i>"Well hasn’t time flown! I’ve been meaning to put this post together for some time, but #exhausted and #priorities. At least i’m getting in before the baby comes!"</i></h4>
+<p align="center">OCTOBER 23, 2019</p><br>
+ 
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-8">
+     <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" align="center">
+      <img src="image/Blog3pic1.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item" align="center">
+      <img src="image/Blog3pic2.jpg" alt="">
+    </div>
+    <div class="carousel-item" align="center">
+      <img src="image/Blog3pic3.jpg" alt="">
+    </div>
+	<div class="carousel-item" align="center">
+      <img src="image/Blog3pic4.jpg" alt="">
+    </div>
+	<div class="carousel-item" align="center">
+      <img src="image/Blog3pic5.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div><br>
+
+<p align="center">Well hasn’t time flown! I’ve been meaning to put this post together for some time, but #exhausted and #priorities. At least i’m getting in before the baby comes!</p>
+<p align="center">I’m currently 35 weeks, so almost there, and its been a real eye opener to dressing for a new body shape.</p>
+
+
+<div class="container px-lg-5">
+  <div class="row mx-lg-n5">
+    <div class="col py-3 px-lg-4  "><img src="image/Blog3pic6.jpg"></div>
+    <div class="col py-3 px-lg-4  "><img src="image/Blog3pic7.jpg"></div>
+  </div>
+</div>
+
+<p align="justify">I thought being pregnant over winter would be fantastic, full of over oversized knits and coats to hide the early stages. What I didn’t realised was how quickly 
+I would grow out of jeans and pants, and how much I relied on these pieces in my wardrobe. I also haven’t gone down the maternity jean and pant option, I’m sure they’re great, but
+ for now I’m making it work without them.</p><br>
+ 
+ <p align="justify">So, it left me with only few choices, which have included knit and cotton ribbed dresses, knit skirts that have an elastic waist that I wear under the bump an
+ d slip dresses that have a bias, and then layer, layer, layer.</p>
+ 
+ <div class="container px-lg-5">
+  <div class="row mx-lg-n5">
+    <div class="col py-3 px-lg-4  "><img src="image/Blog3pic8.jpg"></div>
+    <div class="col py-3 px-lg-4  "><img src="image/Blog3pic9.jpg"></div>
+  </div>
+</div><br>
+ <h4 align="center">My top tips for pregnancy dressing:</h4><br>
+ 
+ <p align="justify">Hug the bump. Pre-pregnancy I usually avoided tight fitted clothing, but during pregnancy going for something that hugs your curves feels much more flattering
+ than a looser option, especially over winter. I think this is also more applicable to pieces in a longer length, which is what I go for. If its a shorter dress where your legs ar
+ e out then I think a looser dress is pretty cute, or if its a summer dress with your arms uncovered then you could also get away with going for something more loose.</p><br>
+
+ <p align="justify">Layer with a light jacket, open shirt, trench or coat. Having that layer over the top of something a little more figure hugging breaks up the look and I like 
+ how it kindly hides my hips and bum.</p><br>
+ 
+  <p align="justify">Utilise as much of your wardrobe as possible. I’ve been trying to be really conscious with my pregnancy shopping and have only added a couple of new pieces. I
+  ts easy to get excited and want to add in lots of new pregnancy pieces, but I’ve been able to utilise a lot of my normal wardrobe. In particular have survived with my bias slip 
+  dresses acting as the base of an outfit most days. Now that i’m towards the end I’m also taking into consideration pieces that will be comfortable over summer that are breastfee
+  ding friendly, which is a whole other styling consideration.</p><br>
+ 
+  <p align="justify">Being in the maternity headspace has opened up my eyes to the fact that this is such a confusing area to shop for, especially if you don’t want to buy from a 
+  maternity brand. To make life a little easier, I’ve put together a Maternity collection over at The UNDONE, where everything is bump friendly.</p><br>
+  
+  <p align="center"><a href="https://www.instagram.com/harperandharley/?hl=en" class="btn" target="_b">Follow her on instagram</a>
+  </p>
+  
+</section>
+
+
+
+
+<!--Footer-->
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 class="dancingScript">B J D</h6>
+            <p class="text-justify">BJD.com is a trendy news blog that targets millennials.
+			Focusing on social news and entertainment, the secret of B J D's success has a lot to do with the image-heavy 
+			listicles published on their platform and end up often going viral. Though founded in 2019, BJD really took off as a brand
+			and news blog of its own in 2020 when it started publishing serious news and long-form journalism on topics like technology, business, politics, and more.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Get Help</h6>
+            <ul class="footer-links">
+              <li><a href="error.html">Feedback</a></li>
+              <li><a href="error.html">Call us</a></li>
+              <li><a href="error.html">Email us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
+         <a href="#">BJD Blog</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/StealKickz/"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="youtube" href="#"><i class="fa fa-youtube-play""></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+	<!--scrolldown-->
+	
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 300){
+			$('#topButton').addClass('show');
+		}else{
+			$('#topButton').removeClass('show');
+		}
+	});
+	
+	$('#topButton').click(function(e){
+		e.preventDefault();
+		$('html,body').animate({scrollTop:0});
+	});
+
+	const lightbox = document.createElement('div')
+	lightbox.id = 'lightbox'
+	document.body.appendChild(lightbox)
+	
+	const images = document.querySelectorAll('img')
+	images.forEach(image => {
+		image.addEventListener('click', e => {
+			lightbox.classList.add('active')
+			const img = document.createElement('img')
+			img.src = image.src
+			while(lightbox.firstChild){
+				lightbox.removeChild(lightbox.firstChild)
+			}
+			lightbox.appendChild(img)
+		})
+	})
+	
+	lightbox.addEventListener('click', e=>{
+		if (e.target !== e.currentTarget) return
+		lightbox.classList.remove('active')
+	})
+
+	function goBack() {
+	  window.history.back();
+	}
+	
+	
+	</script>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>

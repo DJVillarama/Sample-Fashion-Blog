@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src='jquery.js'></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	
+	<link rel = "stylesheet" href = "css/fontawesome.css">
+	<link rel = "stylesheet" href = "css/flaticon.css">
+	
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--Style-->
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="image/logo.jpg" type="image/png" sizes="30x">
+	
+	
+	<!--Style-->
+	<style>
+			
+		.header{
+		  position:relative;
+		  overflow:hidden;
+		  display:flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-items: flex-start;
+		  align-content: flex-start;
+		  height:50vw;
+		  min-height:400px;
+		  max-height:550px;
+		  min-width:300px;
+		  color:#eee;
+		}
+		.header:after{
+		  content:"";
+		  width:100%;
+		  height:100%;
+		  position:absolute;
+		  bottom:0;
+		  left:0;
+		  z-index:-1;
+		 background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+		}
+		.header:before{
+		  content:"";
+		  width:100%;
+		  height:200%;
+		  position:absolute;
+		  top:0;
+		  left:0;
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translateZ(0); backface-visibility: hidden;
+		  scale(1.0, 1.0);
+			transform: translateZ(0);
+		  background:#1B2030 url("image/BlogBig4.jpg") 50% 0 no-repeat;	
+		  background-size:100%;
+		  background-attachment:fixed;
+		  animation: grow 360s  linear 10ms infinite;
+		  transition:all 0.4s ease-in-out;
+		  z-index:-2
+		}
+		.header a{
+		  color:#eee
+		}
+		.menu{
+		  display:block;
+		  width:40px;
+		  height:30px;
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  position:absolute;
+		  right:20px;
+		  top:20px;
+		  text-decoration:none
+		}
+		.menu:after{
+		  content:"";
+		  display:block;
+		  width:20px;
+		  height:3px;
+		  background:#fff;
+		  position:absolute;
+		  margin:0 auto;
+		  top:5px;
+		  left:0;
+		  right:0;
+		  box-shadow:0 8px, 0 16px
+		}
+		.logo{
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-flex;
+		  align-items:center;
+		  align-content:center;
+		  margin:20px;
+		  padding:0px 10px;
+		  font-weight:900;
+		  font-size:1.1em;
+		  line-height:1;
+		  box-sizing:border-box;
+		  height:40px
+		}
+		.sides, .info{
+		  flex: 0 0 auto;
+		  width:50%
+		}
+		.info{
+		  width:100%;
+		  padding:15% 10% 0 10%;
+		  text-align:center;
+		  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+		}
+		.author{
+		  display:inline-block;
+		  width:50px;
+		  height:50px;
+		  border-radius:50%;
+		  background:url("image/daileigh.jpg") center no-repeat;
+		  background-size:cover;
+		  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+		  margin-bottom:3px
+		}
+		.info h4, .meta{
+		  font-size:0.7em
+		}
+		.meta{
+		  font-style:italic;
+		}
+		@keyframes grow{
+		  0% { transform: scale(1) translateY(0px)}
+		  50% { transform: scale(1.2) translateY(-400px)}
+		}
+		.content{  
+		  padding:5% 10%;
+		  text-align:justify
+		}
+		.btn{
+		  color:#333;
+		  border:2px solid;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-block;
+		  padding:5px 10px;
+		  font-weight:600
+		}
+	
+		p{
+		font-size: 18px;
+	}
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <title>BJD Blog</title>
+  </head>
+  <body>
+  <!--topbutton-->
+	<a id='topButton'></a>
+	<!--Header-->
+	<div class="header">
+ <div class="sides">
+	<span style="cursor:pointer"><a onclick="goBack()" class="logo">Go BACK</a></span>
+  </div>
+  <div class="sides"></div>
+  <div class="info">
+    <h1>How To Look Good In Leggings</h1>
+    <div class="meta">
+      <a  href="https://thedaileigh.com/" target="_b" class="author"></a><br>
+      By <a href="https://thedaileigh.com/" target="_b">THE DAILEIGH</a>
+    </div>
+  </div>
+</div>
+<section class="content">
+<h4 align="center">When you hear the word, ‘leggings’ you’re either like - “Yes, I love leggings!” or “Leggings don’t look good on me.”  </h4><br>
+<p align="center">You either love them or hate them.  </p>
+ 
+<p align="center">This is one of the coziest styles that are practical for your day-to-day, how can you not want to wear them?</p>
+<p align="justify">I receive tons of questions about how to wear leggings, or can you wear leggings at a certain age. There is no age limit o
+n wanting to dress better and look good. And this applies to leggings. You can wear them at any age. If you like them and want to wear them, you can. </p>
+
+<p align="justify"> Leggings may feel a little tricky to pull off because they are form-fitting throughout, and if you’re looking to mask certain areas,
+ then you may find yourself a bit reluctant to wear them. Or, you simply don’t want to feel “exposed.”</p>
+<p align="justify">Leggings are considered as active or leisurewear, but to me, they’re wardrobe essentials. It’s easy to get caught up in your everyda
+y styles, like, jeans, blouses, shirts, and dresses, and overlooking those super chill and relaxed pieces your wardrobe also needs.     </p>
+<p align="justify	">Athleisure is a popular casual style that I cover in my athleisure line of eBooks. It gives you new ideas on how to dress casuall
+y without always resorting to the same go-to casual outfits - a tee and jeans. This style centers mainly around leggings and tunic-style tops. In sprin
+g and summer, you’ll have more options.  </p>
+<p align="justify">If you’re struggling with how to look in leggings, here are some tips for you. </p><br>
+
+
+<h4 align="center">WEAR WITH A LONG SHIRT</h4>
+<div class="container px-lg-5" align="center">
+    <img src="image/Blog4pic1.jpg">
+</div><br>
+
+<p align="center">Longer shirts give you the front and back coverage and help you avoid feeling exposed. They provide a more tasteful way of wearing this form-fitting style as an everyday outfit.  </p><br>
+ 
+ <h4 align="center">WHEN WORN WITH A SHORTER SHIRT, TIE A SHIRT OR JACKET AROUND YOUR WAIST </h4>
+<div class="container px-lg-5" align="center">
+    <img src="image/Blog4pic2.jpg">
+</div><br>
+ 
+ <p align="center">A short style doesn’t give you that coverage, but tying a shirt or jacket around your waist does!  </p><br>
+ 
+ <h4 align="center">WHEN WORN WITH A SHORTER SHIRT, TIE A SHIRT OR JACKET AROUND YOUR WAIST </h4>
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog4pic3.jpg">
+</div><br>
+
+ <h4 align="center">MASK PROBLEM AREAS  </h4>
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog4pic4.jpg">
+</div><br>
+ <p align="justify">Leggings come in all different styles, and if you’re looking to hide a tummy, opt for a high-waist or compression style to help create a more flattering look for you and allow y
+ ou to feel more comfortable in this style.    Compression leggings look like your ordinary leggings, but they have a different role.  They are designed to sculpt and hold you in.</p><br>
+
+ <p align="justify">Athleisure Essentials eBook covers the year-round athleisure basics that you can transition through every season and are needed to mix and match your clothes. Each seasonal athl
+ eisure eBook will include a mix of your athleisure essentials and then help you to build from there with the seasonal pieces.</p><br>
+ 
+  <p align="justify">While leggings have no age limit to them, and there may be hesitations on wearing them, using these tips will hopefully warm you up to a style that can change your entire outlook on casual outfits!</p>
+ 
+<h4 align="center">STAY IN STYLE!</h4><br>
+  
+  <p align="center"><a href="https://thedaileigh.com/" class="btn" target="_b">Visit the Site</a>
+  </p>
+  
+</section>
+
+
+
+
+<!--Footer-->
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 class="dancingScript">B J D</h6>
+            <p class="text-justify">BJD.com is a trendy news blog that targets millennials.
+			Focusing on social news and entertainment, the secret of B J D's success has a lot to do with the image-heavy 
+			listicles published on their platform and end up often going viral. Though founded in 2019, BJD really took off as a brand
+			and news blog of its own in 2020 when it started publishing serious news and long-form journalism on topics like technology, business, politics, and more.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Get Help</h6>
+            <ul class="footer-links">
+              <li><a href="error.html">Feedback</a></li>
+              <li><a href="error.html">Call us</a></li>
+              <li><a href="error.html">Email us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
+         <a href="#">BJD Blog</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/StealKickz/"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="youtube" href="#"><i class="fa fa-youtube-play""></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+	<!--scrolldown-->
+	
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 300){
+			$('#topButton').addClass('show');
+		}else{
+			$('#topButton').removeClass('show');
+		}
+	});
+	
+	$('#topButton').click(function(e){
+		e.preventDefault();
+		$('html,body').animate({scrollTop:0});
+	});
+
+	const lightbox = document.createElement('div')
+	lightbox.id = 'lightbox'
+	document.body.appendChild(lightbox)
+	
+	const images = document.querySelectorAll('img')
+	images.forEach(image => {
+		image.addEventListener('click', e => {
+			lightbox.classList.add('active')
+			const img = document.createElement('img')
+			img.src = image.src
+			while(lightbox.firstChild){
+				lightbox.removeChild(lightbox.firstChild)
+			}
+			lightbox.appendChild(img)
+		})
+	})
+	
+	lightbox.addEventListener('click', e=>{
+		if (e.target !== e.currentTarget) return
+		lightbox.classList.remove('active')
+	})
+
+	function goBack() {
+	  window.history.back();
+	}
+
+	</script>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>

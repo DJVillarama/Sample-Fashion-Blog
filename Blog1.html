@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src='jquery.js'></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	
+	<link rel = "stylesheet" href = "css/fontawesome.css">
+	<link rel = "stylesheet" href = "css/flaticon.css">
+	
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--Style-->
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="image/logo.jpg" type="image/png" sizes="30x">
+	
+	
+	<!--Style-->
+	<style>
+			
+		.header{
+		  position:relative;
+		  overflow:hidden;
+		  display:flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-items: flex-start;
+		  align-content: flex-start;
+		  height:50vw;
+		  min-height:400px;
+		  max-height:550px;
+		  min-width:300px;
+		  color:#eee;
+		}
+		.header:after{
+		  content:"";
+		  width:100%;
+		  height:100%;
+		  position:absolute;
+		  bottom:0;
+		  left:0;
+		  z-index:-1;
+		 background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+		}
+		.header:before{
+		  content:"";
+		  width:100%;
+		  height:200%;
+		  position:absolute;
+		  top:0;
+		  left:0;
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translateZ(0); backface-visibility: hidden;
+		  scale(1.0, 1.0);
+			transform: translateZ(0);
+		  background:#1B2030 url("image/BlogBig1.jpg") 50% 0 no-repeat;	
+		  background-size:100%;
+		  background-attachment:fixed;
+		  animation: grow 360s  linear 10ms infinite;
+		  transition:all 0.4s ease-in-out;
+		  z-index:-2
+		}
+		.header a{
+		  color:#eee
+		}
+		.menu{
+		  display:block;
+		  width:40px;
+		  height:30px;
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  position:absolute;
+		  right:20px;
+		  top:20px;
+		  text-decoration:none
+		}
+		.menu:after{
+		  content:"";
+		  display:block;
+		  width:20px;
+		  height:3px;
+		  background:#fff;
+		  position:absolute;
+		  margin:0 auto;
+		  top:5px;
+		  left:0;
+		  right:0;
+		  box-shadow:0 8px, 0 16px
+		}
+		.logo{
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-flex;
+		  align-items:center;
+		  align-content:center;
+		  margin:20px;
+		  padding:0px 10px;
+		  font-weight:900;
+		  font-size:1.1em;
+		  line-height:1;
+		  box-sizing:border-box;
+		  height:40px
+		}
+		.sides, .info{
+		  flex: 0 0 auto;
+		  width:50%
+		}
+		.info{
+		  width:100%;
+		  padding:15% 10% 0 10%;
+		  text-align:center;
+		  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+		}
+		.author{
+		  display:inline-block;
+		  width:50px;
+		  height:50px;
+		  border-radius:50%;
+		  background:url("image/carmen.jpg") center no-repeat;
+		  background-size:cover;
+		  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+		  margin-bottom:3px
+		}
+		.info h4, .meta{
+		  font-size:0.7em
+		}
+		.meta{
+		  font-style:italic;
+		}
+		@keyframes grow{
+		  0% { transform: scale(1) translateY(0px)}
+		  50% { transform: scale(1.2) translateY(-400px)}
+		}
+		.content{  
+		  padding:5% 10%;
+		  text-align:justify
+		}
+		.btn{
+		  color:#333;
+		  border:2px solid;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-block;
+		  padding:5px 10px;
+		  font-weight:600
+		}
+
+				
+				
+				p{
+		font-size: 18px;
+	}
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <title>BJD Blog</title>
+  </head>
+  <body>
+  <!--topbutton-->
+	<a id='topButton'></a>
+	<!--Header-->
+	<div class="header">
+  <div class="sides">
+	<span style="cursor:pointer"><a onclick="goBack()" class="logo">Go BACK</a></span>
+  </div>
+  <div class="sides"></div>
+  <div class="info">
+    <h1>How To Style Denim From AM to PM</h1>
+    <div class="meta">
+      <a  href="https://www.instagram.com/carmengracehamilton/" target="_b" class="author"></a><br>
+      By <a href="https://www.instagram.com/carmengracehamilton/" target="_b">Carmen Hamillton</a>
+    </div>
+  </div>
+</div>
+<section class="content">
+<h4 align="center">Five *kewt* looks to take you from work, to the weekend and beyond!</h4><br>
+<p align="justify">There’s a few things in life that I can’t fathom living without: my morning coffee, the litany 
+of Dermalogica products that sit atop my bathroom shelf, binging Love Island, and, in saving the
+ most important for last, my ever-evolving denim collection. If I had a dollar for every time I tried 
+ on twenty different outfits only to revert back to a classic ‘jeans and a t-shirt’ combination, I’d have 
+ enough money to buy every pair of jeans that have elicited an “OMG I WILL LITERALLY DIE WITHOUT THESE” claim
+ from me. And trust me, there’s been a lot of those over the years.</p><br>
+ <p align="justify">Slipping into your favourite pair of jeans is akin to returning home from a long day at work—a comforting and 
+ supremely satisfying feeling. But, over the years, jeans (and denim at large) have earned themselves the reputation of being 
+ purely casual wardrobe pieces. Today, I’m here to set the record straight.</p><br>
+ <p align="justify">Find me an occasion/time of the day, and I’ll find you a denim-based outfit recommendation befitting of the dress code.
+ Actually, I’ll go one better and do the leg work myself! Without further ado, a guide to styling denim from sun up to sun down (and beyond).</p><br>
+ 
+ <h4 align="center">In the Morning</h4>
+ <div class="container" align="center">
+  <div class="row">
+	<div class="col-sm-2"></div>
+    <div class="col-sm-8"><img src="image/Blog1pic1.jpg"  > <img src="image/Blog1pic2.jpg" ></div>
+    <div class="col-sm-2"></div>
+  </div><br>
+
+   <p align="justify">Whether you’re the early bird who likes to get the first worm (read: latte), or the late riser who rolls out of bed only after snoozing every 
+ alarm you set the night before, these Light Wash Nobody jeans are the perfect pre-day jeans. These are as snug as they are comfortable, which is 
+ the main objective for lounging around the house before you carpe diem, espresso in one hand and your iPad in the other. Pair with an organic cotton 
+ t-shirt, a pair of slides and your signature gold necklace for ultimate ease.</p><br>
+ 
+  <h4 align="center">Running errands</h4>
+  <div class="container" align="center">
+  <div class="row">
+	<div class="col-sm-2"></div>
+    <div class="col-sm-8"><img src="image/Blog1pic3.jpg"  > <img src="image/Blog1pic4.jpg" ></div>
+    <div class="col-sm-2"></div>
+  </div><br>
+  <p align="justify">You know you’re getting old when you actively look forward to running errands, but you know you’re doing it in style when you plan out your running
+  -around-the-city outfit with the same gusto as Lady Gaga prepping for the Met Gala. On both accounts, guilty as charged! While the key here is comfort, 
+  that doesn’t have to equal frumpy. Know that you’ll still look chic AF if you bump into your ex by pairing your Skinny Nobody Jeans with a ribbed cotton t
+  ank, your favourite pair of shades, and a handbag that’s big enough to fit the essentials but small enough to not weigh you down. Cinch at the waist with a
+  statement belt, and if the weather calls for it, an on-trend beige coat. Et voila! You’re ready to work your way through that to-do list.</p>
+  
+  <h4 align="center">Work</h4>
+  <div class="row">
+	<div class="col-sm-2"></div>
+    <div class="col-sm-8"><img src="image/Blog1pic5.jpg"  > <img src="image/Blog1pic6.jpg" ></div>
+    <div class="col-sm-2"></div>
+  </div><br>
+  <p align="justify">Casual Fridays withstanding, work calls for a more polished approach to denim. I’ve got one word for you: Blazers. Yep, a structured blazer paired with a turtle n
+  eck and a darker shade of denim— like these Black Nobody Jeans, which were made with the modern working woman in mind—will make sure that you adhere to sartorial proto
+  col while still looking stylish. Now just add a lick of your favourite everyday nude lipstick and you’re good to go.</p><br>
+  
+  
+  <h4 align="center">Afternoon Drinks</h4>
+  <div class="row">
+	<div class="col-sm-2"></div>
+    <div class="col-sm-8"><img src="image/Blog1pic7.jpg"  > <img src="image/Blog1pic8.jpg" ></div>
+    <div class="col-sm-2"></div>
+  </div><br>
+  <p align="justify"></p> Double denim? For a post-work spritz with the girls? Are you bonkers? I know, I know. There’s a very fine line between looking chic in double denim
+  and looking like you’ve just stepped out of a time machine sent from the early 90s. Opt for a darker denim ensemble—like this Nobody Jacket paired with these Nobody Jeans—f
+  r a more refined look. Bring the look into the present day with the addition of a smattering of fine gold necklaces and a pair of statement kitten heels. </p><br>
+  
+  <h4 align="center">Evening</h4>
+  <div class="row">
+	<div class="col-sm-2"></div>
+    <div class="col-sm-8"><img src="image/Blog1pic9.jpg"  > <img src="image/Blog1pic10.jpg" ></div>
+    <div class="col-sm-2"></div>
+  </div><br>
+  <p align="justify"> For a denim look that’ll see you through the evening, it’s time to get a little more daring with the rest of your outfit. Enter the Going-Out Top. This c
+  an take the form of a cute crop top as pictured here, a spaghetti strap cami, or a slinky metallic number, but whichever path you choose, remember that the only operative her
+  e is to have F-U-N. Balance out the party that’s going on up top with these Cropped Wide Leg Nobody Jeans and your favourite strappy heels. Let’s go, girls.</p><br>
+  
+  <p align="center"><a href="https://www.instagram.com/carmengracehamilton/" class="btn" target="_b">Follow her on instagram</a>
+  </p>
+  
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer-->
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 class="dancingScript">B J D</h6>
+            <p class="text-justify">BJD.com is a trendy news blog that targets millennials.
+			Focusing on social news and entertainment, the secret of B J D's success has a lot to do with the image-heavy 
+			listicles published on their platform and end up often going viral. Though founded in 2019, BJD really took off as a brand
+			and news blog of its own in 2020 when it started publishing serious news and long-form journalism on topics like technology, business, politics, and more.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Get Help</h6>
+            <ul class="footer-links">
+              <li><a href="error.html">Feedback</a></li>
+              <li><a href="error.html">Call us</a></li>
+              <li><a href="error.html">Email us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
+         <a href="#">BJD Blog</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/StealKickz/"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="youtube" href="#"><i class="fa fa-youtube-play""></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+	<!--scrolldown-->
+	window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("whatis").style.fontSize = "30px";
+  } else {
+    document.getElementById("whatis").style.fontSize = "90px";
+  }
+}
+
+
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 300){
+			$('#topButton').addClass('show');
+		}else{
+			$('#topButton').removeClass('show');
+		}
+	});
+	
+	$('#topButton').click(function(e){
+		e.preventDefault();
+		$('html,body').animate({scrollTop:0});
+	});
+
+	const lightbox = document.createElement('div')
+	lightbox.id = 'lightbox'
+	document.body.appendChild(lightbox)
+	
+	const images = document.querySelectorAll('img')
+	images.forEach(image => {
+		image.addEventListener('click', e => {
+			lightbox.classList.add('active')
+			const img = document.createElement('img')
+			img.src = image.src
+			while(lightbox.firstChild){
+				lightbox.removeChild(lightbox.firstChild)
+			}
+			lightbox.appendChild(img)
+		})
+	})
+	
+	lightbox.addEventListener('click', e=>{
+		if (e.target !== e.currentTarget) return
+		lightbox.classList.remove('active')
+	})
+
+
+	function goBack() {
+	  window.history.back();
+	}
+	
+	</script>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>

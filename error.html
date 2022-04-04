@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src='jquery.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	
+	<link rel = "stylesheet" href = "css/fontawesome.css">
+	<link rel = "stylesheet" href = "css/flaticon.css">
+	
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<link rel="icon" href="image/logo.jpg" type="image/png" sizes="30x">
+	<!--Style-->
+	
+	<style>
+		.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.youtube:hover
+{
+  background-color:#c4302b
+}
+.social-icons a.instagram:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+
+*{
+    transition: all 0.6s;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #888;
+    margin: 0;
+}
+
+#main{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.fof{
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.fof h1{
+	  font-size: 50px;
+	  display: inline-block;
+	  padding-right: 12px;
+	  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+	  from{box-shadow: inset -3px 0px 0px #888;}
+	  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+	</style>
+	
+
+    <title>BJD Blog</title>
+  </head>
+  <body>
+	<!--topbutton-->
+	<a id='topButton'></a>
+	
+		<!--NAVIGATOR-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#"><h1 class ="dancingScript">B J D</h1></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+
+	  <div class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item" style="font-size: 14px">
+			<a class="nav-link" href="index.html">Home</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="Members.html">Members</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="About.html">About</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="Gallery.html">Gallery</a>
+		  </li>
+		<li class="nav-item">
+			<a class="nav-link" href="Contact.html">Contact</a>
+		  </li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+		  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+		 <a href="error.html"><button type="button" class="btn btn-outline-dark">Search</button></a>
+		</form>
+	  </div>
+	</nav>
+	
+	
+	
+	
+	<div id="main">
+    	<div class="fof">
+        		<h1>Error 404.</h1>
+				<h3>Page not Found</h3>
+				<a href="index.html"><button type="button" class="btn btn-outline-dark" >back to home</button> </a>
+    	</div>
+</div>
+
+	
+
+	
+	
+	
+<!--Footer-->
+
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 class="dancingScript">B J D</h6>
+            <p class="text-justify">BJD.com is a trendy news blog that targets millennials.
+			Focusing on social news and entertainment, the secret of B J D's success has a lot to do with the image-heavy 
+			listicles published on their platform and end up often going viral. Though founded in 2019, BJD really took off as a brand
+			and news blog of its own in 2020 when it started publishing serious news and long-form journalism on topics like technology, business, politics, and more.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Get Help</h6>
+            <ul class="footer-links">
+              <li><a href="error.html">Feedback</a></li>
+              <li><a href="error.html">Call us</a></li>
+              <li><a href="error.html">Email us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
+         <a href="#">BJD Blog</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="youtube" href="#"><i class="fa fa-youtube-play""></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>

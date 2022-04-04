@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src='jquery.js'></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	
+	<link rel = "stylesheet" href = "css/fontawesome.css">
+	<link rel = "stylesheet" href = "css/flaticon.css">
+	
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--Style-->
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="image/logo.jpg" type="image/png" sizes="30x">
+	
+	
+	<!--Style-->
+	<style>
+			
+		.header{
+		  position:relative;
+		  overflow:hidden;
+		  display:flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-items: flex-start;
+		  align-content: flex-start;
+		  height:50vw;
+		  min-height:400px;
+		  max-height:550px;
+		  min-width:300px;
+		  color:#eee;
+		}
+		.header:after{
+		  content:"";
+		  width:100%;
+		  height:100%;
+		  position:absolute;
+		  bottom:0;
+		  left:0;
+		  z-index:-1;
+		 background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+		}
+		.header:before{
+		  content:"";
+		  width:100%;
+		  height:200%;
+		  position:absolute;
+		  top:0;
+		  left:0;
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translateZ(0); backface-visibility: hidden;
+		  scale(1.0, 1.0);
+			transform: translateZ(0);
+		  background:#1B2030 url("image/BlogBig6.jpg") 50% 0 no-repeat;	
+		  background-size:100%;
+		  background-attachment:fixed;
+		  animation: grow 360s  linear 10ms infinite;
+		  transition:all 0.4s ease-in-out;
+		  z-index:-2
+		}
+		.header a{
+		  color:#eee
+		}
+		.menu{
+		  display:block;
+		  width:40px;
+		  height:30px;
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  position:absolute;
+		  right:20px;
+		  top:20px;
+		  text-decoration:none
+		}
+		.menu:after{
+		  content:"";
+		  display:block;
+		  width:20px;
+		  height:3px;
+		  background:#fff;
+		  position:absolute;
+		  margin:0 auto;
+		  top:5px;
+		  left:0;
+		  right:0;
+		  box-shadow:0 8px, 0 16px
+		}
+		.logo{
+		  border:2px solid #fff;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-flex;
+		  align-items:center;
+		  align-content:center;
+		  margin:20px;
+		  padding:0px 10px;
+		  font-weight:900;
+		  font-size:1.1em;
+		  line-height:1;
+		  box-sizing:border-box;
+		  height:40px
+		}
+		.sides, .info{
+		  flex: 0 0 auto;
+		  width:50%
+		}
+		.info{
+		  width:100%;
+		  padding:15% 10% 0 10%;
+		  text-align:center;
+		  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+		}
+		.author{
+		  display:inline-block;
+		  width:50px;
+		  height:50px;
+		  border-radius:50%;
+		  background:url("image/Gazette.jpg") center no-repeat;
+		  background-size:cover;
+		  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+		  margin-bottom:3px
+		}
+		.info h4, .meta{
+		  font-size:0.7em
+		}
+		.meta{
+		  font-style:italic;
+		}
+		@keyframes grow{
+		  0% { transform: scale(1) translateY(0px)}
+		  50% { transform: scale(1.2) translateY(-400px)}
+		}
+		.content{  
+		  padding:5% 10%;
+		  text-align:justify
+		}
+		.btn{
+		  color:#333;
+		  border:2px solid;
+		  border-radius:3px;
+		  text-decoration:none;
+		  display:inline-block;
+		  padding:5px 10px;
+		  font-weight:600
+		}
+	
+				
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <title>BJD Blog</title>
+  </head>
+  <body>
+  <!--topbutton-->
+	<a id='topButton'></a>
+	<!--Header-->
+	<div class="header">
+ <div class="sides">
+	<span style="cursor:pointer"><a onclick="goBack()" class="logo">Go BACK</a></span>
+  </div>
+  <div class="sides"></div>
+  <div class="info">
+    <h1>Is the Suit Dying – The Role of Classic Menswear in Today’s World</h1>
+    <div class="meta">
+      <a  href="https://www.gentlemansgazette.com/" target="_b" class="author"></a><br>
+      By <a href="https://www.gentlemansgazette.com/" target="_b">Preston Schlueter</a>
+    </div>
+  </div>
+</div>
+<section class="content">
+
+<h5 align="center">March 8, 2020</h5>
+<p align="justify">As we enter the third decade of the 21st century, there’s been an 
+increasing amount of scrutiny placed on that most quintessential of menswear ensembles, the s
+uit. Where suits were the everyday professional attire of most of the Western world in the la
+te 19th and through the 20th centuries, there have been seismic shifts in the last few decades 
+in the world of professional attire. So, where does the suit stand today? Is it a relic of a b
+ygone era or does it still have a role to play in the world of menswear?</p><br>
+
+<h4 align="center">A Brief History of Suits</h4>
+<p align="justify">In the 1940s everyday attire for most men was based on the suit. The typical 
+price for a suit, at the time, was about $50 which averages to around $917 in today’s money. Text
+ile manufacturing in the US was reaching its peak output around this time and the average America
+n spent around 12% of their income on clothing. In this era, a man would buy a suit at an average
+ of about one every two years or so. Not only would he wear his suits to the office but also in a
+ wide variety of other locations. For example, to watch sporting events or sometimes, even to pla
+ y sports.</p>
+ 
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic1.jpg">
+</div><br>
+
+<p align="justify">If we look a decade earlier at the 1930s, everyone from famous movie stars to wo
+rking men in breadlines were wearing suits almost daily. Through the first half of the 20th century,
+ the suit was largely synonymous with broader ideas about the nature of masculinity and society but
+ as the counterculture movement of the 1960s came into its own, there was large-scale rejection of th
+ e traditions that had typified the earlier part of the century and this included menswear. And while 
+ the suit has hung on and continued to evolve through the ensuing decades, there is still a greater emph
+ asis placed on individuality and in particular, comfort in today’s fashions.</p><br>
+ 
+ <h4 align="center">Suits In The Modern Era</h4>
+<p align="justify">So we’re long past the days where most men are wearing suits every day and for almost 
+any occasion but does this actually mean that the suit is on its way out?</p>
+  <p align="justify">Today, evidence of a decline of menswear and really the apparel industry as a whol
+  e is everywhere. In this graph from a recent article from Bloomberg entitled the Death of Clothing, yo
+  u can see that apparel is quickly losing ground in terms of where consumers are spending their money t
+  o technology and experiences.</p><br>
+  
+  <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic2.jpg">
+</div><br>
+<p align="justify">Apparel stores of all kinds including those that claim to be the future of retail are 
+closing. As an example, luxury department store, Barneys, has filed for bankruptcy and agreed to close al
+l of its stores. Financial institutions like JP Morgan and Goldman Sachs long considered bastions of for
+mality, just think of the phrase “white collar,” are now relaxing their dress codes and American men are b
+uying fewer suits, overall. Today, casual attire really is the new standard. As just one example, men can w
+ear sneakers with just about any ensemble.</p>
+ <p align="justify">The textile and apparel industries in America have almost completely disappeared and 
+ high-level CEOs of multibillion-dollar corporations who now see the suit as being too stuffy have ditched 
+ it for more contemporary looks. Think, for example, of people like Steve Jobs with his turtleneck sweaters 
+ and Mark Zuckerberg with his trademark hoodies.</p><br>
+
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic3.jpg">
+</div><br>
+
+<h4 align="center">The Power Suit</h4>
+<p align="justify">It is important to note that there’s an element of socioeconomic status when deciding on
+ dress codes. So, while a CEO may have the ability to decide what their own dress code will be, those workin
+ below them might not have that same freedom. Also, this speaks to some degree about matters of personal valu
+ e. If Mark Zuckerberg wants to wear the same thing every day so he can maximize his mental energies elsewher
+ e, more power to him but you can still devote mental resources to your clothes if looking good is a priority
+ to you and it should be but more on this later.</p><br>
+ 
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic4.jpg">
+</div><br>
+
+<p align="justify">Far from the days when the average man would buy a suit every two years or so, today’s man 
+buys fewer than one suit every 10 years and many men will only wear suits on specific special occasions such a
+s weddings, funerals, and congressional testimony. Mentioning Mark Zuckerberg again, these images of Zuckerber
+g making congressional testimony made headlines all over the world not just because of what he was saying but 
+lso because of what he was wearing. However, different outlets had different responses to these images.</p>
+<p align="justify">A piece from media outlet, Vox, on the supposed death of the suit argued that Zuckerberg t
+rading in his hoodie for a suit spoke to the current status of the ensemble as a uniform for the powerless on
+ly worn by those who are trying to appease those in positions of higher power than themselves. In the words of
+ the author of the piece, Mark Dent, “unless you live on Park Avenue, the suit brings to mind job interviews, j
+ unior salespeople, hotel clerks, and court appearances.”</p><br>
+ 
+  <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic5.jpg"><br>
+</div><br>
+<p align="justify">Meanwhile, the New York Times had a different take on the matter. According to their writer, 
+Vanessa Friedman, Zuckerberg wearing a suit said to “suspicious, establishment lawmakers: I am in your house, I
+ will accept your rules. It said I acknowledge the responsibility I bear and take this seriously. It acceded to t
+ he general interpretation that this was a growing up moment, because in the iconography of clothing, the suit is t
+ he costume of the grown-up, while the t-shirt is the costume of the teenager, the off-duty, the breaker of rules.”</p>
+
+<p align="justify">While we agree with Dent’s take that the suit is strongly linked to power dynamics in professiona
+l settings, we also agree with Friedman that while wearing a suit does say that you’re willing to play by a certain s
+et of rules, the effect that the suit has on your appearance still creates a powerful visual statement. Despite the br
+ader decline that we’re currently seeing in the apparel industry, clothes, at their core, can still have a powerful eff
+ect on your image and your perceived identity. So while it may be the case that Mark Zuckerberg felt that he had to play
+ by Congress’ rules in wearing a suit to his testimony, he also didn’t want to look the part of a smug teenager, he wante
+ d to look like the CEO of a multi-billion dollar international company who was serious about why he was there that day.</p><br>
+ 
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic6.jpg"><br>
+<h4 align="center">Are Suits Still Needed In The Workplace?</h4>
+
+<p align="justify">Expressions of power aside though, it is a valid question to ask whether we even have a need for suits as m
+ore and more workplaces become increasingly casual. Let’s take Goldman Sachs and their recent change in dress code as an exampl
+e here, according to author, Jay Fielden, in a piece for Esquire, “This doesn’t mean that all suits are dying. Instead, he argue
+s that we’re only seeing the death of a type of suit, that blousey, droop shouldered, floppy lagged, body swallowing blue mass o
+f fabric thing which has, for almost two decades, been the obligatory uniform of bank managers, politicians, and CEOs.</p>
+ 
+ 
+ <p align="justify">What this look said on the behalf of its wearer is, “Whatever you do, don’t look at me.” In other words, wh
+ at we may be witnessing now is the death of the conventional power suit which, as time has gone on, became less about power and 
+ ironically, more about the lack of it, as we discussed earlier. To quote Fieldman again, “To think a suit is one thing is to mis
+ understand what a suit is. Like a Swiss Army knife, it’s a multi-purpose tool.”</p><br>
+ 
+ <h4 align="center">The New Role of The Suit</h4>
+ <p align="justify">So if only the power suit is truly dying these days and suits, in general, are to take on a new role, what will
+ that new role be? In our opinion, the suit is probably going to transition from being an expression of conformity to one of creativity.
+ Fashion houses have, again, been increasing the number of suits and suit-inspired ensembles in their recent collections and creative suits
+ have been a mainstay of red carpet looks for years. As another example, consider Justin Timberlake’s 2013 hit song, Suit and Tie, which he 
+ performed on the accompanying tour wearing tailored Tom Ford suits.</p><br>
+ 
+ <h4 align="center">Brock McGoff of The Modest Man in a burgundy suit from Indochino</h4><br>
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic7.jpg"><br>
+	
+	<p align="justify">Off the red carpet, made-to-measure tailoring is becoming increasingly popular for the average man as it becomes mo
+	re financially feasible. Think of brands like SuitSupply and Indochino who have brought the personal satisfaction that comes with customiz
+	ed, if not necessarily fully bespoke garments to new audiences. All of this is to say that more men are now seeing the suit as a canvas f
+	or personal expression.</p><br>
+ 
+ <p align="justify">With that, there are two things to keep in mind here. First is that the suit has already evolved quite a bit since its ince
+ ption in the late 19th century. Waistcoats are no longer a mandatory feature, lapels have widened and narrowed over time, silhouettes have chan
+ ged and much more. The suit has evolved quite a bit over time and it has the potential to continue evolving. Secondly, the suit isn’t just an ac
+ cessory that might fall in or out of fashion like a particular style of hat. Rather, a suit is a full ensemble and it’s supreme utility and versa
+ tility have carved out a place in menswear that has made it a staple for over 150 years.</p><br>
+ 
+ <h4 align="center">Accessorizing Suits</h4>
+ <p align="justify">To add on to our earlier point about suits and personal expression, if you add accessories to a suit, you can, of course, create
+ a variety of different looks that also speak to your own personal taste. Men in the early 20th century knew that even though most of them were broadly
+ wearing suits as an overall uniform, they could work within that mold to still have subtle touches of personal identity.</p><br>
+ 
+ <div class="container px-lg-5" align="center">
+    <img src="image/Blog6pic8.jpg"><br>
+ <h4 align="center">Brock McGoff of The Modest Man in a burgundy suit from Indochino</h4>
+ <p align="justify">We, here at the Gentleman’s Gazette, believe that the so-called Golden Age of Tailored Menswear from about the 1920s to the 1960s
+ contains looks that can still be leveraged today for maximum confidence and style but that doesn’t mean that we think our preferred aesthetic is the 
+ only one that’s out there or the only one that can work best for a variety of different men.</p>
+ <p align="justify">Suits have become something that many men wear only when absolutely necessary or when a clear corporate power dynamic exists but at
+ the same time, as more companies continue to become more casual in terms of everyday dress and the suit leaves the workplace as a requirement, these old
+ power dynamics may have the potential to fall away to a greater degree.</p>
+ <p align="justify">In their place, the suit will be able to embrace a new role as a platform for personal and aesthetic expression either for those who
+ wish to channel its history, as we do here at the Gentleman’s Gazette, or for those who want to take it in entirely new directions. In other words, the
+ era of men having to wear suits may be ending but the era of men wanting to wear suits is just beginning. So, the suit is dead, long live the suit!  </p><br>
+ 
+
+  <p align="center"><a href="https://www.gentlemansgazette.com/" class="btn" target="_b">Visit the Site</a>
+  </p>
+  
+</section>
+
+
+
+
+<!--Footer-->
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 class="dancingScript">B J D</h6>
+            <p class="text-justify">BJD.com is a trendy news blog that targets millennials.
+			Focusing on social news and entertainment, the secret of B J D's success has a lot to do with the image-heavy 
+			listicles published on their platform and end up often going viral. Though founded in 2019, BJD really took off as a brand
+			and news blog of its own in 2020 when it started publishing serious news and long-form journalism on topics like technology, business, politics, and more.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Get Help</h6>
+            <ul class="footer-links">
+              <li><a href="error.html">Feedback</a></li>
+              <li><a href="error.html">Call us</a></li>
+              <li><a href="error.html">Email us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
+         <a href="#">BJD Blog</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/StealKickz/"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="youtube" href="#"><i class="fa fa-youtube-play""></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+	<!--scrolldown-->
+	
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 300){
+			$('#topButton').addClass('show');
+		}else{
+			$('#topButton').removeClass('show');
+		}
+	});
+	
+	$('#topButton').click(function(e){
+		e.preventDefault();
+		$('html,body').animate({scrollTop:0});
+	});
+
+	const lightbox = document.createElement('div')
+	lightbox.id = 'lightbox'
+	document.body.appendChild(lightbox)
+	
+	const images = document.querySelectorAll('img')
+	images.forEach(image => {
+		image.addEventListener('click', e => {
+			lightbox.classList.add('active')
+			const img = document.createElement('img')
+			img.src = image.src
+			while(lightbox.firstChild){
+				lightbox.removeChild(lightbox.firstChild)
+			}
+			lightbox.appendChild(img)
+		})
+	})
+	
+	lightbox.addEventListener('click', e=>{
+		if (e.target !== e.currentTarget) return
+		lightbox.classList.remove('active')
+	})
+
+	function goBack() {
+	  window.history.back();
+	}
+	
+	p{
+		font-size: 18px;
+	}
+	
+	</script>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
